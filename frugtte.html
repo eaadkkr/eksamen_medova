@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/artikler.css">
+    <title>Frugtte | Medova Te</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_cirkel.png">
+</head>
+
+
+<!------------------------------------------------------------------------
+BODY
+-------------------------------------------------------------------------->
+
+<body class="body_forside">
+
+
+    <!--======================================================================
+================================ HEADER ==================================
+=======================================================================-->
+    <header>
+
+        <!------------------------------------------------------------------------
+NAVIGATION
+------------------------------------------------------------------------->
+        <nav>
+
+            <!------------------------------------------------------------------------
+BURGERMENU - https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11)
+------------------------------------------------------------------------->
+
+            <!-- Burgerstreger -->
+            <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+            <label class="m-menu__toggle" for="menu">
+                <svg class="burger_streger" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                    stroke-linecap="butt">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </label>
+            <label class="m-menu__overlay" for="menu"></label>
+
+            <div class="m-menu">
+                <div class="m-menu__header">
+
+                    <!-- Kryds i menuen -->
+                    <label class="m-menu__toggle" for="menu">
+                        <svg class="burger_kryds" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                            stroke-width="2" stroke-linecap="butt">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </label>
+
+                    <!-- Overskrift i menuen -->
+                    <span>Menu</span>
+                </div>
+
+                <ul>
+
+                    <!-- Item 1: Konkurrence -->
+                    <li><a href="konkurrence.html">Konkurrence</a></li>
+
+
+                    <!-- Item 2: Tes egenskaber -->
+                    <li>
+                        <label class="a-label__chevron burger_overkat" for="item-2">Tes egenskaber</label>
+                        <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-2">
+
+                                    <!-- Burger pil -->
+                                    <svg class="burger_pil" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                                        stroke-width="2" stroke-linecap="butt">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+
+                                <!-- Overskrift i menuen -->
+                                <span>Tes egenskaber</span>
+                            </div>
+                            <ul>
+                                <li><a href="te_kaffe.html" class="burgermenu_link">Te vs. kaffe</a></li>
+                                <li><a href="afkobling.html" class="burgermenu_link">Tid til dig selv</a></li>
+                                <li><a href="socialt_samvaer.html" class="burgermenu_link">Socialt samvær</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Item 3: Udvalg -->
+                    <li>
+                        <label class="a-label__chevron burger_overkat" for="item-3">Udvalg</label>
+                        <input type="checkbox" id="item-3" name="item-3" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-3">
+
+                                    <!-- Burger pil -->
+                                    <svg class="burger_pil" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                        stroke-linecap="butt">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+
+                                <!-- Overskrift i menuen -->
+                                <span>Udvalg</span>
+                            </div>
+                            <ul>
+                                <li><a href="frugtte.html" class="burgermenu_link">Frugtte</a></li>
+                                <li><a href="groen_te.html" class="burgermenu_link">Grøn te</a></li>
+                                <li><a href="sort_te.html" class="burgermenu_link">Sort te</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <!-- Item 4: Om Medova -->
+                    <li>
+                        <label class="a-label__chevron burger_overkat" for="item-4">Om Medova</label>
+                        <input type="checkbox" id="item-4" name="item-4" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-4">
+
+                                    <!-- Burger pil -->
+                                    <svg class="burger_pil" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                        stroke-linecap="butt">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+
+                                <!-- Overskrift i menuen -->
+                                <span>Om Medova</span>
+                            </div>
+                            <ul>
+                                <li><a href="vores_historie.html" class="burgermenu_link">Vores historie</a></li>
+                                <li><a href="forhandlere.html" class="burgermenu_link">Find forhandler</a></li>
+                                <li><a href="kontakt.html" class="burgermenu_link">Kontakt os</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!------------------------------------------------------------------
+DROPDOWN MENU (https://www.w3schools.com/howto/howto_css_dropdown.asp)
+------------------------------------------------------------------->
+
+            <!-- Menu items -->
+            <div class="menu_items">
+
+                <!-- Item 1: Tes egenskaber -->
+                <div class="dropdown">
+                    <form action="tes_egenskaber.html" class="menu_item">
+                        <button class="dropbutton">Tes egenskaber</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="te_kaffe.html">Te vs. kaffe</a>
+                        <a href="afkobling.html">Tid til dig selv</a>
+                        <a href="socialt_samvaer.html">Socialt samvær</a>
+                    </div>
+                </div>
+
+                <!-- Item 2: Udvalg -->
+                <div class="dropdown">
+                    <form action="udvalg.html" class="menu_item">
+                        <button class="dropbutton active_menuitem">Udvalg</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="frugtte.html">Frugtte</a>
+                        <a href="groen_te.html">Grøn te</a>
+                        <a href="sort_te.html">Sort te</a>
+                    </div>
+                </div>
+
+                <!-- Item 3: Om Medova -->
+                <div class="dropdown dropdown_ekstra_bue">
+                    <form action="om_medova.html" class="menu_item">
+                        <button class="dropbutton">Om Medova</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="vores_historie.html">Vores historie</a>
+                        <a href="forhandlere.html">Find forhandler</a>
+                        <a href="kontakt.html">Kontakt os</a>
+                    </div>
+                </div>
+
+                <!-- Item 4: Konkurrence -->
+                <div class="dropdown">
+                    <form action="konkurrence.html" class="menu_item"><button class="dropbutton"
+                            id="dropbutton_fire">Konkurrence</button></form>
+                </div>
+
+            </div>
+
+            <!------------------------------------------------------------------
+LOGO
+------------------------------------------------------------------->
+            <a href="index.html" class="logo">
+                <img src="img/logo_tekop.png" alt="Medova te logo. Tegnet tekop set oppefra med tebrev." class="logo">
+            </a>
+        </nav>
+
+
+
+
+    </header>
+
+    <!------------------------------------------------------------------
+BØLGE, COVERBILLEDE & CITAT
+------------------------------------------------------------------->
+<section class="cover_section">        
+    <div class="cover">
+                <!-- Bølge -->
+                <img src="img/bolge.png" alt="brun bølgeform." class="bolge">
+    
+                <!-- Coverbillede -->
+                <img src="img/cover_frugtte.jpg" alt="Hvid marmorplade med tre skeer med forskellige typer te set oppefra."
+                    class="cover_img">
+    
+                <!-- Citat -->
+                <div class="cover_txt_boks">
+                    <h1 class="cover_txt">Det eneste, der ikke er støvet </h1>
+                    <h1 class="cover_txt">i min bolig, er tekopperne </h1>
+                </div>
+            </div>
+    </section>
+    
+
+    <!--======================================================================
+================================= MAIN ===================================
+=======================================================================-->
+    <main class="main_forside">
+
+
+        <!------------------------------------------------------------------
+ARTIKEL
+------------------------------------------------------------------->
+        <article class="artikel_side">
+
+            <!-- Overskrift -->
+            <h1 class="artikel_header"> Frugtte </h1>
+
+            <!-- Tekst -->
+            <p class="artikel_txt">
+                Her finder du alle Medovas sorte teer med frugtsmag. De er alle lavet på udsøgte topskudsblade fra
+                tebuske i Kenya, Ceylon, Indien og Indonesien.
+            </p>
+
+            <p class="artikel_txt udvalg_stor_txt">
+                Frugtte kan laves på to forskellige måder. Man kan overhælde tørret frugt med kogende vand. Eller man
+                kan tilsætte frugtstykker eller -aroma til en sort te. Hos Medova er alle vores frugtteer baseret på
+                sort te. De har derfor de samme egenskaber som sort te.
+            </p>
+
+
+            <section class="udvalg_section">
+
+                <!-- 1: mango (nyhed)-->
+                <div class="udvalg_element">
+                    <a href="f_mango.html" class="udvalg_link">
+                        <img src="img/mango_nyhed.png" alt="Blå tepakke med mango foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova frugtte med mango</h2>
+                    </a>
+                </div>
+
+                <!-- 2: øko mango -->
+                <div class="udvalg_element">
+                    <a href="f_oeko_mango.html" class="udvalg_link">
+                        <img src="img/mango_oko.png" alt="Blå tepakke med mango foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova øko frugtte med mango</h2>
+                    </a>
+                </div>
+
+                <!-- 3: citron -->
+                <div class="udvalg_element">
+                    <a href="f_citron.html" class="udvalg_link">
+                        <img src="img/citron.png" alt="Blå tepakke med citron foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova frugtte med citron</h2>
+                    </a>
+                </div>
+
+                <!-- 4: skovbær -->
+                <div class="udvalg_element">
+                    <a href="f_skovbaer.html" class="udvalg_link">
+                        <img src="img/skovbaer.png" alt="Blå tepakke med skovbær foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova frugtte med skovbær</h2>
+                    </a>
+                </div>
+
+                <!-- 5: øko skovbær -->
+                <div class="udvalg_element">
+                    <a href="f_oeko_skovbaer.html" class="udvalg_link">
+                        <img src="img/skovbaer_oko.png" alt="Blå tepakke med skovbær foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova øko frugtte med skovbær</h2>
+                    </a>
+                </div>
+
+                <!-- 6: jordbær -->
+                <div class="udvalg_element">
+                    <a href="f_jordbaer.html" class="udvalg_link">
+                        <img src="img/jordbaer.png" alt="Blå tepakke med jordbær foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova frugtte med jordbær</h2>
+                    </a>
+                </div>
+                
+                <!-- 7: solbær -->
+                <div class="udvalg_element">
+                    <a href="f_solbaer.html" class="udvalg_link">
+                        <img src="img/solbaer.png" alt="Blå tepakke med solbær foran." class="udvalg_img">
+                        <h2 class="udvalg_header">Medova frugtte med solbær</h2>
+                    </a>
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <!--======================================================================
+================================ FOOTER ==================================
+=======================================================================-->
+    <!-- Bølgebillede over footer -->
+
+    <img src="img/bolge_footer.png" alt="brun bølgeform." class="bolge bolge_footer">
+
+    <footer class="footer_forside">
+        <!-- Card 1: Følg os, find forhandler, kontakt os -->
+        <div class="footer_card">
+            <!-- Følg os -->
+            <h4 class="footer_card_header">Følg os</h4>
+            <a href="https://www.facebook.com/"><img src="img/facebook_cirkel.png" alt="Facebook logo"
+                    class="some_img"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram_cirkel.png" alt="Instagram logo"
+                    class="some_img instagram"></a>
+            <a href="https://www.youtube.com/"><img src="img/youtube_cirkel.png" alt="Youtube logo"
+                    class="some_img youtube"></a>
+
+            <!-- Find forhandlere -->
+            <h4 class="footer_card_header"><a href="forhandlere.html" class="footer_link">Find forhandler</a></h4>
+
+            <!-- Kontakt os -->
+            <h4 class="footer_card_header"><a href="kontakt.html" class="footer_link">Kontakt Medova</a></h4>
+        </div>
+
+        <!-- Card 2: Unilever -->
+        <div class="footer_card">
+            <address>
+                Unilever Danmark A/S <br>
+                Ørestads Boulevard 73 <br>
+                2300 København S
+            </address>
+            <p><a href="tel:+4570277785" class="footer_link" id="tel">+45 70 27 77 85</a></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
