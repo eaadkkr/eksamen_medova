@@ -1,0 +1,496 @@
+/*-----------------------------------------------------
+FARVER - hentes med: var(--navn)
+-----------------------------------------------------*/
+:root {
+    --lysbeige: #FBF9F7;
+    --morkbeige: rgb(233, 227, 222);
+    --brun: #916F54;
+    --orange: #D3711A;
+    --bla: #BAD2DB;
+    --hvid: #ffffff;
+    --sort: #333333;
+}
+
+
+/*=============================================================================================
+==========================================   MOBIL   ==========================================
+=============================================================================================*/
+
+
+/*-------------------------------------------------------------------------
+IMAGE SLIDER - (https://www.tutorialspoint.com/how-to-create-an-image-slider-using-html-css-and-javascript#)
+-------------------------------------------------------------------------*/
+
+.mySlides {
+    display: none
+}
+
+.slide_img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: var(--hvid);
+    background-color: var(--brun);
+    opacity: 0.25;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit seethrough */
+.prev:hover,
+.next:hover {
+    background-color: var(--brun);
+    opacity: 0.5;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--morkbeige);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--brun);
+}
+
+
+/*-------------------------------------------------------------------------
+PRODUKTBESKRIVELSE
+-------------------------------------------------------------------------*/
+.main_produkt {
+    margin: 0 5%;
+}
+
+.pro_info_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro_info_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro_beskrivelse {
+    margin-block-start: 0;
+    margin-bottom: 20px;
+}
+
+.pro_under_header {
+    margin-block-end: 0;
+}
+
+.pro_info_fokus {
+    background-color: var(--bla);
+    text-align: center;
+    font-weight: bold;
+    color: var(--sort);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+.find_forhandler_knap {
+    color: var(--hvid);
+    background-color: var(--orange);
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px 10px;
+    border: solid 1px var(--orange);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.find_forhandler_knap:hover {
+    opacity: 80%;
+}
+
+/*-------------------------------------------------------------------------
+NÆRINGSINDHOLD
+-------------------------------------------------------------------------*/
+
+/* Collapsible - (https://www.w3schools.com/howto/howto_js_collapsible.asp) */
+.collapsible {
+    background-color: var(--morkbeige);
+    color: var(--sort);
+    cursor: pointer;
+    padding: 10px 10px;
+    margin-bottom: 2rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Arial Rounded MT', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.active,
+.collapsible:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 0 0px;
+    display: none;
+    overflow: hidden;
+}
+
+
+/* Pil - (https://www.w3schools.com/howto/howto_css_arrows.asp) */
+.arrow {
+    border: solid var(--sort);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: 3px;
+}
+
+.pil {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+
+/* Tabel - (https://www.w3schools.com/html/html_tables.asp) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid var(--morkbeige);
+    text-align: left;
+    padding: 8px;
+}
+
+.td_tal {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: var(--morkbeige);
+}
+
+
+
+/*-------------------------------------------------------------------------
+BRUGERBEDØMMELSER - (https://www.w3schools.com/howto/howto_css_user_rating.asp)
+-------------------------------------------------------------------------*/
+.stjerner_header {
+    font-size: 1rem;
+}
+
+.stjerner_txt {
+    font-size: 0.9rem;
+}
+
+.fa {
+    font-size: 1rem;
+}
+
+.checked {
+    color: var(--orange);
+}
+
+hr {
+    border: 3px solid var(--morkbeige)
+}
+
+.hr_nederst {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Three column layout (3 = stjerner, bar, antal bedømmelser) */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: var(--hvid);
+    border: solid 1px var(--sort);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 22%;
+    height: 1.1rem;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.bar-4 {
+    width: 47%;
+    height: 1.1rem;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 1.1rem;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.bar-2 {
+    width: 13%;
+    height: 1.1rem;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.bar-1 {
+    width: 8%;
+    height: 1.1rem;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.bruger_link {
+    color: var(--orange);
+}
+
+
+/*-------------------------------------------------------------------------
+ANMELDELSER
+-------------------------------------------------------------------------*/
+.anm_element {
+    background-color: var(--bla);
+    border: solid 1px var(--sort);
+    padding: 5px 5%;
+    margin-bottom: 15px;
+}
+
+.anm_navn {
+    font-size: 1rem;
+}
+
+.anm_stjerner {
+    font-size: 1rem;
+}
+
+.anm_dato {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.anm_txt {
+    font-size: 0.9rem;
+}
+
+
+/*-------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------*/
+.bolge_footer {
+    top: 0.3rem;
+}
+
+
+
+/*=============================================================================================
+=========================================   TABLET   ==========================================
+=============================================================================================*/
+
+@media screen and (min-width: 760px) {
+
+    /*-------------------------------------------------------------------------
+PRODUKTBESKRIVELSE
+-------------------------------------------------------------------------*/
+
+    .main_produkt {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .pro_info_section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pro_img {
+        margin-bottom: 20px;
+    }
+
+    .pro_img_div {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .pro_info_div {
+        width: 56%;
+    }
+
+    .pro_header {
+        margin-block-start: 0;
+    }
+
+
+    /*-------------------------------------------------------------------------
+BRUGERBEDØMMELSER
+-------------------------------------------------------------------------*/
+    .stjerner_header {
+        font-size: 1.1rem;
+    }
+
+    .stjerner_txt {
+        font-size: 1rem;
+    }
+
+    .fa {
+        font-size: 1.1rem;
+    }
+
+    .side {
+        width: 10%;
+    }
+
+    .middle {
+        width: 80%;
+    }
+
+
+    /*-------------------------------------------------------------------------
+ANMELDELSER
+-------------------------------------------------------------------------*/
+    .anm_element {
+        padding: 5px 2%;
+    }
+
+    .anm_navn {
+        font-size: 1.1rem;
+        margin-block-end: 0;
+        padding-right: 20px;
+    }
+
+    .anm_stjerner {
+        font-size: 1.1rem;
+    }
+
+    .anm_dato {
+        font-size: 0.9rem;
+    }
+
+    .anm_txt {
+        font-size: 1rem;
+    }
+
+    .anm_navn_stjerner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .anm_stjerner {
+        margin-block-start: 1em;
+    }
+
+}
+
+
+
+
+
+
+/*=============================================================================================
+========================================   COMPUTER   =========================================
+=============================================================================================*/
+
+@media screen and (min-width: 1200px) {
+
+    .main_produkt {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    /*-------------------------------------------------------------------------
+BRUGERBEDØMMELSER
+-------------------------------------------------------------------------*/
+    .stjerner_header {
+        font-size: 1.2rem;
+    }
+
+    .stjerner_txt {
+        font-size: 1rem;
+    }
+
+    .fa {
+        font-size: 1.2rem;
+    }
+
+    .side {
+        width: 5%;
+    }
+
+    .middle {
+        width: 90%;
+    }
+
+
+
+}
